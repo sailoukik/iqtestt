@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Security IQ test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/gl.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app"></div>
+<!-- partial -->
+  <script type="module" src="css/cs.js"></script>
+<script>
+  const submitQuizResults = async (results) => {
+  try {
+    const response = await fetch("/submitQuizResults", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(results),
+    });
+
+    if (response.ok) {
+      // Handle success (e.g., show a success message to the user)
+      console.log("Results sent successfully!");
+    } else {
+      // Handle errors (e.g., show an error message to the user)
+      console.error("Failed to send results");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+  }
+};
+
+// Call this function when the user finishes the quiz
+const quizResults = {
+  // Include the results here, e.g., correct, wrong, empty, etc.
+};
+submitQuizResults(quizResults);
+
+</script>
+</body>
+</html>

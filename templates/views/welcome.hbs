@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> IQJourney-HOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="css/welcome.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top transparent">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <a class="navbar-brand" href="#" target="newwindow">IQJourney</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <style>
+          /* Hover effect for navbar */
+          .navbar-nav > li > a:hover {
+            background-color: rgb(126, 12, 12);
+            color: #fff;
+          }
+        </style>
+        
+        <li class="nav-item dropdown">
+          <a href="taketest.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Take Test <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="generalized_iq_test">Generalized IQ (Open for All)</a></li>
+            <li><a class="dropdown-item" href="ml.html">Machine Learning</a></li>
+            <li><a class="dropdown-item" href="#cs.html">Cyber Security</a></li>
+          </ul>
+        </li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><i class="fas fa-search"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+<main data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="jumbotron photo-cover text-inverse">
+    <div class="col-md-6 text-center center">
+      <h1>Embark on a journey to discover your intelligence and challenge your mind with IQJourney.</h1>
+      <a href="#about">
+        <span class="fui-triangle-down large"></span>
+      </a>
+      <div class="buttons">
+        <a href="/login" class="btn btn-lg btn-primary">Signup</a>
+        <a href="/taketest" class="btn btn-lg btn-success">Take Test</a>
+         <a href="/login1" class="btn btn-lg btn-success">Login</a>
+
+      </div>
+    </div>
+  </div>
+  <div id="about" class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md-8 col-md-offset-2 text-center">
+        <h2>About Us</h2>
+          <hr>
+          <p class ='lead'>
+            IQJourney is dedicated to providing a platform for individuals to test and enhance their intelligence. Our mission is to challenge your mind and help you reach your full cognitive potential.
+          </p>
+          <p>
+            At IQJourney, we believe in the power of knowledge and continuous learning. We are a team of experts and enthusiasts in the fields of psychology, education, and technology. Our passion for helping individuals explore their intellectual capabilities drives us to create engaging and thought-provoking IQ tests.
+          </p>
+          <p>
+            We are committed to maintaining the highest standards in test design and psychometrics to ensure that our users receive accurate and meaningful results. Whether you're a student looking to improve your academic performance or a professional seeking to enhance your problem-solving skills, IQJourney is here to guide you on your intellectual journey.
+          </p>
+          <p>
+            Join us today and embark on a journey of self-discovery and cognitive growth. Your path to a sharper mind starts here with IQJourney.
+          </p>
+          <img src="css/aboutus.jpeg" alt="Adha Siddharth" class="center-block img-responsive img-circle"/>
+        </div> <!-- .col-md-8 -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- #about -->  
+</main>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="css/welcome.js"></script>
+
+</body>
+</html>
